@@ -10,6 +10,14 @@ Statičan sajt-katalog obuće (HTML, CSS i JavaScript, bez servera i baze) i skr
 | `katalog-sajt/proizvodi.js` | svi proizvodi i podešavanja (jedino što se redovno menja) |
 | `dodaj-slike.ps1` | upisuje fotografije iz `katalog-sajt/slike/` u `proizvodi.js` |
 | `prati-slike.ps1`, `prati-slike.cmd` | prate folder sa slikama i sami pokreću `dodaj-slike.ps1` |
+| `posalji-na-github.cmd` | ažurira `proizvodi.js` i šalje izmene i nove slike na GitHub |
+
+## Dodavanje sopstvenih fotografija (vlasnik)
+
+1. Slikaj proizvod: za svaku boju bočno (glavna), par, đon i detalj, na svetloj pozadini.
+2. Iskopiraj slike u `katalog-sajt/slike/<id-proizvoda>/` (`id` je iz `proizvodi.js`).
+3. Označi sve slike jedne boje (glavnu prvu), pritisni F2 i upiši naziv boje, npr. `crna`.
+4. Dvoklik na `posalji-na-github.cmd` i potvrdi sa `d`.
 
 ## Pokretanje
 
@@ -32,4 +40,4 @@ Cene su trenutno sakrivene (`prikaziCijene: false` u `proizvodi.js`). Ostaviti t
 Koriste se **isključivo fotografije koje dostavi vlasnik** (njegove ili od dobavljača sa dozvolom).
 Ne preuzimati fotografije sa drugih sajtova i ne koristiti tuđe robne marke i logotipe.
 
-Fotografije nisu u repozitorijumu (`katalog-sajt/slike/` je u `.gitignore`), vlasnik ih šalje posebno.
+Vlasnikove fotografije su u `katalog-sajt/slike/`.
