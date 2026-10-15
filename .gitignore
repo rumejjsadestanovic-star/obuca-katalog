@@ -1,0 +1,12 @@
+# Samo izabrani fajlovi idu u repozitorijum; sve ostalo (slike, katalozi, logovi) ostaje lokalno.
+/*
+!/.gitignore
+!/README.md
+!/dodaj-slike.ps1
+!/prati-slike.ps1
+!/prati-slike.cmd
+!/katalog-sajt/
+
+# Unutar sajta: bez fotografija i rezervnih kopija
+/katalog-sajt/slike/
+*.bak
